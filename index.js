@@ -29,9 +29,7 @@ async function handleSiteRequest(request) {
   const url = new URL(request.url)
 
   if (url.pathname === '/' || url.pathname === '') {
-    return new Response(html, {
-      headers: { 'content-type': contentTypes.html }
-    })
+    return new Response("You are not authorised")
   }
 
   return new Response('Not found', { status: 404 })
