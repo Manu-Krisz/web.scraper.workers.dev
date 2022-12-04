@@ -1,10 +1,12 @@
 const cleanText = s => s.trim().replace(/\s\s+/g, ' ')
 
+
 class Scraper {
   constructor() {
     this.rewriter = new HTMLRewriter()
     return this
   }
+  
 
   async fetch(url) {
     this.url = url
