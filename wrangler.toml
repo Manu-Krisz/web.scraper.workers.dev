@@ -4,3 +4,8 @@ compatibility_date = "2022-06-03"
 
 [build]
 command = "npm run build"
+
+[build.upload]
+dir = "dist"
+format = "service-worker"
+main = "worker.js"
