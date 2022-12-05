@@ -1,4 +1,6 @@
-name = "web"
-account_id = "2575000dd90a08dbbeb2b8cca2e64775" # scraper.workers.dev
-type = "webpack"
-workers_dev = true
+name = "python-worker"
+main = "dist/main.js"
+compatibility_date = "2022-06-03"
+
+[build]
+command = "npm run build"
